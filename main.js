@@ -37,3 +37,8 @@ var instructorPets = [
     }
 ]
 console.log('instructorPets: ', instructorPets);
+
+var petDiv = document.getElementById('pet-names');
+for (var i=0; i<instructorPets.length; i++) {
+    petDiv.innerHTML += '<h1>' + instructorPets[i].petName + '</h1>';
+}
